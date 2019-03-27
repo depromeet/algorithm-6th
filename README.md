@@ -20,7 +20,7 @@
 
 | 언어 | 1팀 (Python)           | 2팀 (Java)                   |
 |------|------------------------|------------------------------|
-| 이름 | 병국, 지원, 지훈, 동건, 유경, 지은 | 상은, 승진, 지혜, 신제, 윤지, 형석, 주현 |
+| 이름 | 병국(팀장), 지원, 지훈, 동건, 유경, 지은 | 윤지(팀장), 상은, 승진, 지혜, 신제, 형석, 주현 |
 
 ### 규칙 (아직 확정 X)
 
@@ -42,6 +42,9 @@
 ### 진행 현황
 
 > 진행 현황은 디프만 Slack의 #algo-study-6th 채널에서도 확인이 가능합니다.
+- 출석체크 및 벌금 현황
+    - [1팀](https://github.com/depromeet/algorithm-6th/blob/master/team1-status.md])
+    - [2팀](https://github.com/depromeet/algorithm-6th/blob/master/team2-status.md)
 - 1주차
   - 1팀 : 해시
   - 2팀 : DFS/BFS
