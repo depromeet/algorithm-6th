@@ -34,7 +34,8 @@
 ### commit message 양식
 
 -	commit message는 `[단원명] {문제이름} {상태}` 양식에 맞춰 작성해주세요.
--	상태에는 `풀이완료, 수정` 둘 중 하나가 들어가면 됩니다. ex) `[완전탐색] 모의고사, 소수찾기 풀이완료`
+-	상태에는 `풀이완료, 풀이 중, 수정` 셋 중 하나가 들어가면 됩니다. ex) `[완전탐색] 모의고사, 소수찾기 풀이완료`
+-   라벨을 만들어두었으니 필요에 따라 추가해주세요.
 
 ### 디렉토리 양식
 - 파일을 올릴 때 경로는 `팀명\문제 그룹명\이름\파일명` 양식으로 통일해주세요. ex) `team1\Hash\yunji\Solution01.java`
@@ -43,7 +44,7 @@
 
 > 진행 현황은 디프만 Slack의 #algo-study-6th 채널에서도 확인이 가능합니다.
 - 출석체크 및 벌금 현황
-    - [1팀](https://github.com/depromeet/algorithm-6th/blob/master/team1-status.md])
+    - [1팀](https://github.com/depromeet/algorithm-6th/blob/master/team1-status.md)
     - [2팀](https://github.com/depromeet/algorithm-6th/blob/master/team2-status.md)
 - 1주차
   - 1팀 : 해시
