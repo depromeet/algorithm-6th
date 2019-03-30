@@ -43,15 +43,13 @@
 ### 진행 현황
 
 > 진행 현황은 디프만 Slack의 #algo-study-6th 채널에서도 확인이 가능합니다.
-- 출석체크 및 벌금 현황
-    - [1팀](https://github.com/depromeet/algorithm-6th/blob/master/team1-status.md)
-    - [2팀](https://github.com/depromeet/algorithm-6th/blob/master/team2-status.md)
+- 출석체크 및 벌금 현황 : [1팀](https://github.com/depromeet/algorithm-6th/blob/master/team1-status.md), [2팀](https://github.com/depromeet/algorithm-6th/blob/master/team2-status.md)
 - 1주차
   - 1팀 : 해시
   - 2팀 : DFS/BFS
 - 2주차
-  - 1팀 : 스택/큐
-  - 2팀 : 
+  - 1팀 : 정렬
+  - 2팀 : 스택/큐
 
 ### 더 많은 문제가 필요한 사람을 위한 링크 모음
 
