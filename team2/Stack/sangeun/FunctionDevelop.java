@@ -1,3 +1,5 @@
+package rithm3.algo;
+
 import java.util.*;
 
 class B3 {
@@ -11,46 +13,47 @@ class B3 {
 }
 public class FunctionDevelop {
 	public static int[] solution(int[] progresses, int[] speeds) {
-        Queue<B3> queue = new LinkedList<>();
-        ArrayList<Integer> Arr = new ArrayList<>();
-        // 큐에 모든 작업 추가 
+        Queue<Integer> queue = new LinkedList<>();
+        ArrayList<Integer> result = new ArrayList<>();
+        // 큐에 작업 일수 추가 
+        // 작업이 몇 일 걸리는지 계산 
 		for (int i = 0 ; i < progresses.length ; i++) {
-			queue.add(new B3(progresses[i], speeds[i]));
+			queue.add((int)Math.floor(1.0 * (100 - progresses[i]) / speeds[i]));
 		}
 		
-		
+
+		int count = 1;
+		int temp = queue.poll();
 		while (!queue.isEmpty()) {
-			// 제일 처음 작업 종료시점까지의 day 계산 
-			B3 temp = queue.peek();
-			int day = (int)Math.floor(1.0 * (100 - temp.progress) / temp.speed);
-			
-			// 모든 작업에 day만큼 추가 
-			Iterator<B3> iter = queue.iterator();
-			while (iter.hasNext()) {
-				B3 temp2 = iter.next();
-				temp2.progress += temp2.speed * day;
-			}
-			
-			// 100이 넘는 작업들 queue에서 제거, count++ 
-			int count = 0;
-			while (!queue.isEmpty()) {
-				B3 temp3 = queue.peek();
-				if (temp3.progress >= 100) {
-					count++;
-					queue.poll();
-				} else {
-					break;
-				}
-			}
-			
-			if (count != 0) {
-				Arr.add(count);
+			if (temp >= queue.peek()) {
+				// queue의 처음과 같이 배포되는 작업(앞 작업보다 일찍 끝난 작업) 
+				count++;
+				queue.poll();
+			} else {
+				// 앞 작업과 같이 배포되지 않는 오래 걸리는 작업
+				result.add(count);
+				count = 1; 
+				temp = queue.poll();	
 			}
 		}
+		
+//		while (!queue.isEmpty()) {
+//			int count = 1;
+//			
+//			int temp = queue.poll();
+//			while (!queue.isEmpty() && temp > queue.peek()) {
+//				queue.poll();
+//				count++;
+//			}
+//			Arr.add(count);
+//		}
+		// 마지막 결과 result에 추가 
+		result.add(count);
+		
 		// 출력 부분 
-        int[] answer = new int[Arr.size()];
+        int[] answer = new int[result.size()];
         for (int i = 0; i < answer.length; i++) {
-            answer[i] = Arr.get(i);
+            answer[i] = result.get(i);
         }
         return answer;
     }
