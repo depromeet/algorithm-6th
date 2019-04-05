@@ -1,31 +1,38 @@
+﻿import java.util.*;
+
 public class Solution02 {
     public int solution(int[] priorities, int location) {
         int answer = 0;
-        int[] count = new int[9];
-        int num = priorities[location];
+        LinkedList<Integer> linkedList = new LinkedList<>();
+
+        if (priorities.length == 1)
+            return 1;
 
         for (int priority : priorities)
-            count[priority - 1]++;
+            linkedList.add(priority);
 
-        for (int i = count.length - 1; i > num - 1; i--) {
-            answer += count[i];
+        while (true) {
+            Integer value = linkedList.pollFirst();
+            if (linkedList.isEmpty())
+                return priorities.length;
+
+            int max = Collections.max(linkedList);
+
+            if (value < max) {
+                linkedList.addLast(value);
+
+                if (location == 0)
+                    location = linkedList.size();
+            } else {
+                answer++; // 값이 하나 빠져나갈 때 1씩 증가
+
+                if (location == 0)
+                    break;
+            }
+
+            location--;
         }
 
-        if (count[num - 1] > 1) {
-            for (int i = priorities.length - 1; i > location; i--) {
-                if (priorities[i] == num)
-                    answer++;
-            }
-        } else
-            answer = 1;
-
         return answer;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new Solution02().solution(new int[]{1, 1, 9, 1, 1, 1}, 0));
-        System.out.println("-----------------------");
-        System.out.println(new Solution02().solution(new int[]{2, 1, 3, 2}, 2));
-        System.out.println("-----------------------");
     }
 }
