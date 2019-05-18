@@ -49,7 +49,7 @@
 > 진행 현황은 디프만 Slack의 #algo-study-6th 채널에서도 확인이 가능합니다.
 
 
-- 출석체크 및 벌금 현황 : 
+- [출석체크 및 벌금 현황](https://github.com/depromeet/algorithm-6th/blob/master/attendance.md)
 
 ### 더 많은 문제가 필요한 사람을 위한 링크 모음
 
