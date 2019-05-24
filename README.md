@@ -1,7 +1,7 @@
 취업하고싶고리즘 :computer:
 ===========================
 
-디프만 6기 2차 개발 스터디인 `취업하고싶고리즘`의 저장소입니다. (1차 스터디 공지사항은 [링크](https://github.com/depromeet/algorithm-6th/blob/master/README-1st.md)에서 확인이 가능합니다)
+디프만 6기 2차 개발 스터디인 `취업하고싶고리즘`의 저장소입니다. (1차 스터디 공지사항은 [링크](https://github.com/depromeet/algorithm-6th/tree/master/study-1st)에서 확인이 가능합니다)
 
 ### 진행 개요
 
