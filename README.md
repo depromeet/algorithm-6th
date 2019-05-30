@@ -34,13 +34,6 @@
 용성(JavaScript) - 지원(JavaScript)
 ```
 
-* 2주차
-
-```
-승주 - 용성
-윤지 - 지혜
-승진 - 지원
-```
 
 ### commit message 양식
 
